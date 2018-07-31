@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>index</title>
+        <!--meta tags-->
+        <meta name="content-type" content="text/html charset=utf-8" />
+        <meta http-equiv="content-type" content="text/html charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="content-language" content="en"/>
+        <meta name="language" content="en"/>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <!--js files-->
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script>
+			 window.onload = function() { document.getElementsByClassName('transition')[0].classList.add('translateAnimationClass'); }
+		</script>
+        <style>
+			 body{
+				margin:0;
+			 }
+            .cover{
+                height: 100vh;
+                background: linear-gradient(-45deg, #CFD8DC, #7c878c, #E0E0E0, #9a918e);
+                background-size: 400% 400%;
+                -webkit-animation: Gradient 15s ease infinite;
+                -moz-animation: Gradient 15s ease infinite;
+                animation: Gradient 15s ease infinite;
+            }
+            .cover  img:hover{
+                left:30% !important;
+            }
+            @-webkit-keyframes Gradient {
+                0% {
+                    background-position: 0% 50%
+                }
+                50% {
+                    background-position: 100% 50%
+                }
+                100% {
+                    background-position: 0% 50%
+                }
+            }
+
+            @-moz-keyframes Gradient {
+                0% {
+                    background-position: 0% 50%
+                }
+                50% {
+                    background-position: 100% 50%
+                }
+                100% {
+                    background-position: 0% 50%
+                }
+            }
+
+            @keyframes Gradient {
+                0% {
+                    background-position: 0% 50%
+                }
+                50% {
+                    background-position: 100% 50%
+                }
+                100% {
+                    background-position: 0% 50%
+                }
+            }
+
+            .cover img{
+                height:60vh;
+                position: absolute;
+                top:20%;
+                left:40%;
+                -webkit-transition: all .9s ease-in-out;
+                -moz-transition: all .9s ease-in-out;
+                -ms-transition: all .9s ease-in-out;
+                -o-transition: all .9s ease-in-out;
+                transition: all .9s ease-in-out;
+            }
+            .transition {
+                -webkit-transition: all 1000s linear;
+                -moz-transition: all 1000s linear;
+                -ms-transition: all 1000s linear;
+                -o-transition: all 1000s linear;
+                transition: all 1000s linear;
+            }
+            .translateAnimationClass {
+                -webkit-transform: rotateX(43200deg) rotateY(14400deg);
+                -moz-transform: rotateX(43200deg) rotateY(14400deg);
+                -ms-transform: rotateX(43200deg) rotateY(14400deg);
+                -o-transform: rotateX(43200deg) rotateY(14400deg);
+                transform: rotateX(43200deg) rotateY(14400deg);
+            }
+            .animation {
+                -webkit-animation: rotator 20s linear infinite;
+                -moz-animation: rotator 20s linear infinite;
+                -ms-animation: rotator 20s linear infinite;
+                -o-animation: rotator 20s linear infinite;
+                animation: rotator 20s linear infinite;
+            }
+
+            @-webkit-keyframes rotator {
+                0%   { -webkit-transform: rotateX(0deg)    rotateY(0deg);
+                top:30%}
+                100% { -webkit-transform: rotateX(90deg) rotateY(360deg); top: 50% }
+            }
+            @-moz-keyframes rotator {
+                0%   { -moz-transform: rotateX(0deg)    rotateY(0deg);    }
+                100% { -moz-transform: rotateX(90deg) rotateY(360deg);  }
+            }
+            @-ms-keyframes rotator {
+                0%   { -ms-transform: rotateX(0deg)    rotateY(0deg);    }
+                100% { -ms-transform: rotateX(90deg) rotateY(360deg);  }
+            }
+            @-o-keyframes rotator {
+                0%   { -o-transform: rotateX(0deg)    rotateY(0deg);    }
+                100% { -o-transform: rotateX(90deg) rotateY(360deg);  }
+            }
+            @keyframes rotator {
+                0%   { transform: rotateX(0deg)    rotateY(0deg);    }
+                100% { transform: rotateX(90deg) rotateY(360deg);  }
+            }
+        </style>
+    </head>
+   <body>
+        <div class="cover">
+            <a href="img/chelsea-ferenando-158086-unsplash.jpg" class="wow zoomIn">
+                <img src="img/chelsea-ferenando-158086-unsplash.jpg" alt="" class="wow zoomIn rotator animation" data-wow-delay="0.5s">
+            </a>
+            <br>
+            <br>
+            <br>
+            <a href="img/chelsea-ferenando-158086-unsplash.jpg" class="wow bounceInLeft"  style="top:20%; left:48%;">
+                <img src="img/chelsea-ferenando-158086-unsplash.jpg" alt="" class="wow zoomIn rotator animation">
+            </a>
+            <a href="img/chelsea-ferenando-158086-unsplash.jpg" class="wow bounceInLeft">
+                <img src="img/chelsea-ferenando-158086-unsplash.jpg" alt="" class="wow zoomIn rotator animation" data-wow-delay="0.8s">
+            </a>
+            <br>
+            <br>
+            <br>
+            <a href="img/chelsea-ferenando-158086-unsplash.jpg" class="wow zoomIn" style="top:15%; left:42%;">
+                <img src="img/chelsea-ferenando-158086-unsplash.jpg" alt="" class="wow zoomIn rotator animation">
+            </a>
+            <a href="img/chelsea-ferenando-158086-unsplash.jpg" class="wow zoomIn">
+                <img src="img/chelsea-ferenando-158086-unsplash.jpg" alt="" class="wow zoomIn rotator animation">
+            </a>
+        </div>
+   </body>
+</html>
